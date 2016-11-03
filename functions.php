@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'stb_blog_widgets_init' );
 function stb_blog_scripts() {
 	wp_enqueue_style( 'stb_blog-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'stb_blog-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'stb_blog-navigation', get_template_directory_uri() . '/js/function.js', array( 'jquery' ), '20151215', true );
 	wp_localize_script( 'stb_blog-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'stb_blog' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'stb_blog' ) . '</span>',
