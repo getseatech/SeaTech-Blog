@@ -119,7 +119,7 @@ function stb_blog_scripts() {
 	wp_enqueue_style( 'popperscores-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
 	
 	//Fontawesome
-	wp_enqueue_style( 'stb-blog-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+	wp_enqueue_style( 'wpb-fa', get_stylesheet_directory_uri() . '/fonts/css/font-awesome.min.css' );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
