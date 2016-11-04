@@ -116,10 +116,10 @@ function stb_blog_scripts() {
 	wp_enqueue_script( 'stb_blog-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
 	// Add Google Fonts: Fira Sans and Merriweather
-	wp_enqueue_style( 'popperscores-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
+	wp_enqueue_style( 'stb_blog-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
 	
 	//Fontawesome
-	wp_enqueue_style( 'stb-blog-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+	wp_enqueue_style( 'stb_blog-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
